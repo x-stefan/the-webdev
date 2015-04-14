@@ -1,0 +1,105 @@
+.showcase-modal {
+	z-index:100;
+	position: relative;
+	margin: 250px auto 0;
+	max-width: 720px;
+	background: white;
+	overflow: hidden;
+	padding: 14px;
+	box-shadow: 0 0 7px $black;
+	border: 1px solid $black;
+	@include transition(all 0.4s ease-in-out);
+
+	.content {
+		float: right;
+		width: 345px;
+		padding: 0 24px;
+
+		h4 {
+			font-size: 1.6em;
+			border-bottom: 1px solid #AAA;
+  	 		display: inline-block;
+    		padding: 10px 10px 10px 0;
+    		margin-bottom: 10px;
+		}
+
+		small {
+			display: block;
+			font-family: $heading-font-family;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+	}
+
+	.link {
+		border-radius: 2px;
+		border: 1px solid $blue;
+		font-size: 1em;
+		line-height: 20px;
+		font-family: $heading-font-family;
+		padding: 5px 10px;
+		background-color: $white;
+		color: $blue;
+		display: inline-block;
+		text-transform: uppercase;
+
+		@include transition(all 0.1s ease-in-out);
+
+		&:hover {
+			background-color: $blue;
+			color: $white;
+		}
+
+		&:active {
+			border-color: $orange;
+			background-color: $orange;
+			color: $white;
+		}
+	}
+
+	.link-B2 {
+		background: url(../img/logo-b2.png) no-repeat center center;
+		display: inline-block;
+		line-height: 20px;
+		height: 32px;
+		width: 32px;
+		margin: 0 8px;
+		background-size: 100%;
+		vertical-align: bottom;
+	}
+
+	.images {
+		float: left;
+		width: 330px;
+		text-align: center;
+		oveflow: hidden;
+	}
+
+	.preview {
+		padding: 18px;
+		background: #F1F1F1;
+		border-top: 1px solid $gray;
+	}
+
+	.thumb {
+		margin: 1%;
+		width: 23%;
+		border: 1px solid $gray;
+		cursor: pointer;
+		background: white;
+	}
+
+	@include media($tablet) {
+
+		& {
+			width: 360px;
+		}
+
+ 		.content, .images {
+ 			float: none;
+ 			margin: 15px auto;
+ 		}
+	}
+
+}
