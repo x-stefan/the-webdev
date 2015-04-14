@@ -1,0 +1,47 @@
+.sm-links li {
+	display: inline-block;
+	margin: 0 22px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.sm-links img {
+	vertical-align: middle;
+	@include filter(drop-shadow( 0 0 6px rgba(0,0,0,0.2)));
+	transition: 200ms ease-in-out;
+}
+
+.sm-links a:hover img {
+	@include filter(drop-shadow( 0 0 6px rgba(0,0,0,0.6)));
+}
+
+.sm-links .sm-linkedin {
+	width: 108px;
+}
+
+.sm-links .sm-twitter {
+	width: 50px;
+}
+
+.sm-links .sm-xing {
+	width: 71px;
+}
+
+ @include media($tablet) {
+
+	.sm-links li {
+		margin: 0 14px;
+	}
+
+	.sm-links .sm-linkedin {
+		width: 98px;
+	}
+
+	.sm-links .sm-twitter {
+		width: 40px;
+	}
+
+	.sm-links .sm-xing {
+		width: 61px;
+	}
+}

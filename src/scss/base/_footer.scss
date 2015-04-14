@@ -1,0 +1,89 @@
+#footer {
+	min-height: 90px;
+	padding-top: 15px;
+	line-height: 0px;
+	background: $black;
+	overflow: hidden;
+	color: $white;
+	text-align: center;
+
+	.copy {
+		display: inline-block;
+		font-family: $heading-font-family;
+		vertical-align: top;
+		padding: 26px 0;
+	}
+
+	.sm-links {
+		display: inline-block;
+		margin: 0 55px;
+	}
+
+	.sm-links img {
+		@include filter(drop-shadow( 0 0 3px rgba(255,255,255,0)));
+		transition: 200ms ease-in-out;
+	}
+
+	.sm-links a:hover img {
+		@include filter(drop-shadow( 0 0 6px rgba(255,255,255,0.6)));
+	}
+
+	.sm-links li {
+		margin: 0 16px;
+	}
+
+	.sm-links .sm-linkedin {
+		width: 80px;
+	}
+
+	.sm-links .sm-twitter {
+		width: 40px;
+	}
+
+	.sm-links .sm-xing {
+    	width: 57px;
+	}
+
+	.mailto {
+		display: inline-block;
+		vertical-align: top;
+		padding: 26px 0;
+		margin-right: -35px;
+		a {
+			color: $white;
+			font-family: $heading-font-family;
+			position: relative;
+			&::after {
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: #fff;
+				content: '';
+				opacity: 0;
+				-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+				-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+				transition: height 0.3s, opacity 0.3s, transform 0.3s;
+				-webkit-transform: translateY(-10px);
+				-moz-transform: translateY(-10px);
+				transform: translateY(-10px);
+			}
+
+			&:hover::after,
+			&:focus::after {
+				height: 2px;
+				opacity: 1;
+				-webkit-transform: translateY(0px);
+				-moz-transform: translateY(0px);
+				transform: translateY(0px);
+			}
+		}
+	}
+
+	@include media($tablet) {
+		.mailto {
+			margin-right: 0;
+		}
+	}
+}

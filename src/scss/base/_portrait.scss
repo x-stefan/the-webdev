@@ -1,0 +1,10 @@
+.portrait {
+	width: 125px;
+	height: 125px;
+	border-radius: 100%;
+	background: url(../img/portrait.jpg) no-repeat center center;
+	border: 1px solid $black;
+	box-shadow: 0 0 7px black;
+	background-size: 100% auto;
+	margin: 0 auto;
+}

@@ -1,0 +1,22 @@
+#technology-stack {
+	background: $white url(../img/bg-tech-white.jpg) no-repeat center center;
+	background-size: cover;
+	min-height: 200px;
+	text-align: center;
+
+	.content {
+		max-width: 780px;
+		display: inline-block;
+		padding: 45px 15px 120px;
+	}
+
+	.headline {
+		border-bottom: 1px solid $gray;
+		display: inline-block;
+		padding: 10px;
+	}
+
+	@include media($mobile) {
+	 	background-image: none;
+	}
+}

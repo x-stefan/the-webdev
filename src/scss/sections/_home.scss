@@ -1,0 +1,31 @@
+#home {
+
+	background: $orange url(../img/bg-header-orange.jpg) no-repeat center center;
+	background-size: cover;
+	height: 675px;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 55px;
+
+	.headline {
+		padding-top: 240px;
+		font-size: 3em;
+	}
+
+	.headline 	small {
+		display: block;
+		font-family: $base-font-family;
+		font-size: 0.43em;
+	}
+
+	.portrait {
+		margin-bottom: 115px;
+	}
+
+	 @include media($tablet) {
+	 	.headline {
+			padding-top: 120px;
+		}
+	}
+}
+

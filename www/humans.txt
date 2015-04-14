@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+	Stefan Stöhr, Web Developer @the_webdev
+
+	Thank you very much Jules, @ZimtPorridge for proof reading.
+
+	Thanks to B2 Communications GmbH, @B2Werbeagentur for letting me use our joint projects in my portfolio.
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Sass, Bourbon
+    jQuery, Modernizr, {{ mustache }}
+    Gulp, BrowserSync
+    Adobe Photoshop & Adobe Illustrator
+    Sublime Text

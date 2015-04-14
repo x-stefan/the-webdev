@@ -1,0 +1,19 @@
+#selected-work {
+
+	background: $blue url(../img/bg-portfolio-blue.jpg) no-repeat center center;
+	background-size: cover;
+	min-height: 975px;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 45px;
+
+	.headline {
+		text-indent: -9999px;
+		height: 45px;
+		margin: 0;
+		padding: 0;
+		display: block;
+		line-height: 45px;
+	}
+
+}

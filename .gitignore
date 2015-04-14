@@ -1,0 +1,41 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and Cache #
+##################
+*.log
+cache/*
+.sass-cache
+
+# OS generated files #
+######################
+._*
+.Spotlight-V100
+.Trashes
+.DS_Store*
+ehthumbs.db
+.VolumeIcon.icns
+.fseventsd
+Icon^M^M
+Thumbs.db
+*.swp
+
+# Vagrant generated files #
+###########################
+www/adminer/
+.vagrant
+
+# Composer #
+############
+composer.lock
+composer.phar
+
+# Node #
+########
+node_modules
